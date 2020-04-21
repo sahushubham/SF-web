@@ -1,0 +1,514 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+
+
+
+.min{
+    text-align: center;
+    border:3.5px;
+    border-style:box;
+    border-color:rgb(0, 0, 0);
+    
+ }
+
+ .headd{
+    height:100vh;
+    width:100%;
+    background-image:url("yo4.jpg");
+    background-size: cover;
+    background-position: top;
+}
+/*.backimage{
+    height:100vh;
+    width:100%;
+    background-image:linear-gradient(to right bottom,rgba(7, 247, 235, 0.897),darkblue)url("yo1.jpg");
+    background-size: cover;
+    background-position: top;
+
+}*/
+.headdd{
+    height:100vh;
+    width:100%;
+    background-size: cover;
+    background-position: top;
+    background-image: linear-gradient(to right bottom,rgba(126, 126, 126, 0.144),rgba(255, 238, 238, 0.11)),url("yo3.jpg")!important;
+
+}
+
+
+.text-box{
+    position:absolute;
+    top:45%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    max-width: 50%;
+    
+}
+.text-box1{
+    position:absolute;
+    top:29%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    max-width: 50%;
+    
+    
+}
+
+.hey{ display: block;
+    font-size:3rem;
+    font-weight:900;
+    letter-spacing: 12px;
+    text-align: center;
+    color: #E3843C;
+    text-emphasis-color:rgb(4, 0, 61) ;
+    /*text-shadow: 1.5px 1px rgb(4, 0, 61);
+*/   
+  
+    
+}
+
+.heya{ display: block;
+    font-size:3rem;
+    font-weight:900;
+    letter-spacing: 12px;
+    text-align: center;
+    color: cornflowerblue;
+    text-emphasis-color:rgb(4, 0, 61) ;
+    text-shadow: 1.5px 1.7px rgb(4, 0, 61);
+ 
+  
+    
+}
+
+.space{
+  padding: 1rem 2.5rem 4rem 2rem;
+  
+}
+
+
+.social{
+  padding-bottom: 1.1rem;
+  flex:0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  padding-top: -15px;
+}
+
+.social a{
+  
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 12px;
+  transition: all 1s ease;
+  text-decoration: none;
+}
+
+
+
+.heading-primary{
+ color: rgb(255, 255, 255);
+ backface-visibility: hidden;
+ margin-bottom: 40px;
+ 
+}
+.heading-primary-main{
+    display: block;
+    font-size:1.5rem;
+    font-weight:900;
+    color:rgb(4, 0, 61);
+    text-emphasis: bold;
+    
+    text-align: center;
+    animation-name: moveInLeft;
+    animation-duration: 4s;
+    
+    animation-timing-function: linear;
+    
+
+}
+
+.heading-primary-main1{
+    display: block;
+    font-size:1.5rem;
+    font-weight:900;
+    color:rgb(4, 0, 61);
+    text-emphasis: bold;
+    
+    text-align: center;
+    animation-name: moveInBottom;
+    animation-duration: 2.5s;
+    
+    animation-timing-function: linear;
+    
+
+}
+
+
+.heading-primary-sub{
+    display:block;
+    font-size:2rem;
+    font-weight:400;
+    letter-spacing:normal;
+    text-align: center;
+    animation-name: moveInRight;
+    animation-duration: 4s;
+    
+    animation-timing-function: ease-out;
+    
+
+}
+
+.heading-primary-sub2{
+    display: block;
+    font-size:24px;
+    font-weight:900;
+    text-align: center;
+    text-emphasis: bold ;
+    color: rgb(6, 0, 61);
+    
+}
+.heading-primary-sub3{
+    display:block;
+    font-size:2rem;
+    font-weight:400;
+    letter-spacing:normal;
+    text-align: center;
+    animation-name: moveInTop;
+    animation-duration: 2.5s;
+    
+    animation-timing-function: ease-out;
+
+}
+.heading-primary-sub4{
+    display:block;
+    font-size:2rem;
+    font-weight:400;
+    letter-spacing:normal;
+    text-align: center;
+    animation-name: moveInBottom;
+    animation-duration: 2.5s;
+    
+    
+    animation-timing-function: ease-out;
+
+}
+@keyframes moveInLeft{
+    0%{
+        opacity:0;
+        transform: translateX(-60px);
+    }
+    80%{
+        transform: translateX(+30px);
+
+    }
+    100%{
+        opacity:1;
+        transform:translate(0);
+
+    }
+}
+
+@keyframes moveInRight{
+    0%{
+        opacity:0;
+        transform: translateX(80px);
+    }
+    80%{
+        transform:translateX(-40px);
+    }
+    100%{
+        opacity:1;
+        transform:translate(0);
+
+    }
+}
+
+@keyframes moveInBottom{
+    0%{
+        opacity:0;
+        transform: translateY(40px);
+
+    }
+    80%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInTop{
+    0%{
+        opacity:0;
+        transform: translateY(-40px);
+    }
+    80%{
+        transform:translateY(15px);
+    }
+    100%{
+        opacity:1;
+        transform:translate(0);
+
+    }
+}
+
+
+
+
+
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all 0.2s;
+    animation-duration: 2s;
+    position: relative;
+    margin-right: 10px;
+
+
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.btn-white{
+    background-color: white;
+    color: rgb(12, 0, 121);
+    font-size: 17px;
+    font-weight:700;
+
+}
+
+.btn::after{
+    content:"";
+    display: inline-block;
+    height:100%;
+    width:100%;
+    border-radius: 100px;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    transition: all 0.5s;
+    
+
+}
+
+.btn-white::after{
+    background-color: whitesmoke;
+
+
+}
+
+.btn:hover::after{
+    transform:scaleX(1.4) scaleY(1.4);
+    opacity:0;
+
+}
+
+.btn-animated{
+    animation:moveInBottom 2.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+
+}
+.brand-name a{
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 600;
+    /*color:chartreuse ;*/
+    position: absolute;
+    padding:1rem 1.2rem 1.2rem 1.6rem;
+   
+  }
+.brand-name a::before{
+    content: '';
+    height: 0.3rem;
+    
+    width: 100%;
+    position: relative;
+    left: 0px;
+    bottom: 0.5rem;
+  }
+
+
+  .heading-secondary{
+    font-size:3rem;
+    text-transform: uppercase;
+    font-weight:700;
+    background-image: linear-gradient(to right,
+    #005aaf,#000661);
+    display:inline-block;
+    -webkit-background-clip: text;
+    color:transparent;
+    
+    /*transform: translateY(-8em);*/
+    margin:0;
+    transition: all 0.2s;
+    text-align: left;
+
+    
+
+}
+
+.heading-secondary:hover{
+    transform: skewX(2deg) skewY(2deg);
+    text-shadow:0.5rem 1rem 2rem rgba(0,0,0,0.2);
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    font-size:2em;
+    font-weight:400;
+    line-height: 1.7;
+    
+    
+
+}
+
+ul{
+    color: #E3843C;
+    list-style-type:disc;
+    font-size: 2rem;
+    font-style: italic;
+    /*text-shadow:2px 2.5px rgb(0, 16, 109);*/
+}
+
+.section-title{
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+  margin-top: -2rem;
+  color: rgb(0, 2, 119);
+  text-shadow: 2px 2px cyan;
+}
+
+
+.text-center{
+    text-align: center!important;
+  }
+
+
+
+
+/*Hobbies*/
+
+.services{
+    background-color: #f5f8fd;
+      padding: 100px 15px 70px;
+  }
+  
+  .services .section-title h1:before{
+    left: 30%;
+  }
+  
+  .services .service-content{
+    flex: 0 0 100%;
+    max-width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .services .service-content .box{
+    background-color: #ffffff;
+    padding: 30px;
+    flex: 0 0 calc(33.33% - 20px);
+    margin-bottom: calc(33.33% - 20px);
+    margin-bottom: 30px;
+    border: 1px solid #eeeeee;
+    text-align: center;
+    position: relative;
+  }
+  
+  .services .service-content .box::before{
+    content: '';
+    height: 2px;
+    background-color: #0177fe;
+    position: absolute;
+    bottom: 0px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all .5s ease;
+  }
+  
+  .services .service-content .box:hover::before{
+    width: 100%;  
+  }
+  
+  .services .service-content .box .icon{
+    height: 60px;
+    width: 60px;
+    background-color: #0177fe;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    text-align: center;
+    border-radius: 3px;
+  }
+  
+  .services .service-content .box .icon .fa{
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 60px;
+  }
+  
+  .services .service-content .box h5{
+    font-size: 16px;
+    font-weight: 600;
+    color:#000000;
+    margin: 0;
+  }
+  
+  .services .service-content .box p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color:#838383;
+    margin: 10px 0 10px;}
+
+.row{
+         padding: bottom 0rem;;
+    }
+#Hobbies{
+    background-color: darkcyan!important;
+    background-image: linear-gradient(to right bottom,rgba(0, 255, 234, 0.25),rgba(0, 164, 170, 0.25)),url("yo2.jpg")!important;
+    background-size: cover;
+}
+
+.sty{
+    color:rgb(0, 16, 109) ;
+    font-size: 2rem;
+    font-style: italic;
+    text-shadow:1.8px 1.6px #E3843C;
+    padding-bottom: 1rem;
+}
+
+.large{
+    max-width: 150px;
+    max-height: 150px;
+}
